@@ -82,6 +82,7 @@ namespace InternetFatura.Controllers
             }
 
             SmtpClient smtp = new SmtpClient();
+            //Şifreniz doğru mu bilmiyorum ama şifreniz public olarak gözüküyor bilginize
             smtp.Credentials = new NetworkCredential("bilgi@sanalfatura.com", "5487mdjk*");
             smtp.Port = 587;
             smtp.Host = "smtp.sanalfatura.com";
